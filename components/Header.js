@@ -5,11 +5,11 @@ import React, { Component, StyleSheet, Text } from 'react-native';
 const styles = StyleSheet.create({
   header: {
     color: 'white',
+    flex: 1,
     fontFamily: 'Helvetica Neue',
     fontSize: 42,
     fontWeight: 'bold',
-    marginBottom: 12,
-    marginTop: 24,
+    justifyContent: 'center',
     textAlign: 'center'
   }
 });

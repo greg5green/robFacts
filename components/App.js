@@ -1,7 +1,7 @@
 'use strict';
 
 import React, {  Component, StyleSheet, View, StatusBarIOS } from 'react-native';
-import FactsContainer from './FactsContainer';
+import FactContainer from './FactContainer';
 import Header from './Header';
 
 const styles = StyleSheet.create({
@@ -9,16 +9,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#292728',
     flex: 1,
     flexDirection: 'column',
-    padding: 30
+    paddingVertical: 20
   }
 });
 
 class App extends Component {
   render() {
+    console.log(this.props);
     return (
       <View style={styles.app}>
         <Header />
-        <FactsContainer />
+        <FactContainer {...this.props} />
       </View>
     );
   }

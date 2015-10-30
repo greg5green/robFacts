@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Helvetica Neue',
     fontSize: 20,
     fontWeight: '300',
+    marginTop: 15,
     textAlign: 'center',
   }
 });
@@ -23,5 +24,7 @@ class FactRefresh extends Component {
     );
   }
 }
+
+FactRefresh.propTypes = propTypes;
 
 export default FactRefresh;
